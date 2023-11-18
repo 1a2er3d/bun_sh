@@ -10,3 +10,6 @@ build:
     - curl -fsSL https://bun.sh/install.sh | bash -s -- -v $BUN_SH_VERSION
     - source "$HOME/.bun/bun.sh"
     - bun version
+  rules:
+    - changes:
+        - "**/*" 
