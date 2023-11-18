@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: bun_sh/install-bun-sh@main
+      - uses: main/install-bun-sh@main
       - name: Test Bun sh
         run: |
           bun sh --version
