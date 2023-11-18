@@ -10,8 +10,9 @@ build:
     - curl -fsSL https://bun.sh/install.sh | bash -s -- -v $BUN_SH_VERSION
     - source "$HOME/.bun/bun.sh"
     - bun version
+    - # Ваша дополнительная логика с использованием bun.sh
 
 on:
   push:
     branches:
-      - main 
+      - main  # Замените на имя вашей основной ветки
