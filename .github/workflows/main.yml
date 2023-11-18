@@ -1,4 +1,4 @@
-name: Install Bun sh
+name: Test Bun sh
 
 on:
   push:
@@ -6,10 +6,12 @@ on:
       - main
 
 jobs:
-  install:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install Bun sh
+      - uses: actions/checkout@v2
+      - uses: bun_sh/install-bun-sh@main
+      - name: Test Bun sh
         run: |
-          curl -sL https://bun.sh/install | bash
+          bun sh --version
