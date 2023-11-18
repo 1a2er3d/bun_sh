@@ -1,0 +1,15 @@
+name: Install Bun sh
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Bun sh
+        run: |
+          curl -sL https://bun.sh/install | bash
